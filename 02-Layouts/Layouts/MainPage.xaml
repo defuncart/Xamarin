@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Layouts" 
+             x:Class="Layouts.MainPage">
+    <StackLayout VerticalOptions="Center">
+        <Button Text="Content View" 
+                Clicked="OnContentView" />
+
+        <Button Text="Frame" 
+                Clicked="OnFrame" />
+        
+        <Button Text="Scroll View" 
+                Clicked="OnScrollView" />
+        
+        <Button Text="Stack Layout" 
+                Clicked="OnStackLayout" />
+        
+        <Button Text="Grid Layout" 
+                Clicked="OnGridLayout" />
+        
+        <Button Text="Absolute Layout" 
+                Clicked="OnAbsoluteLayout" />
+        
+        <Button Text="Relative Layout" 
+                Clicked="OnRelativeLayout" />
+        
+        <Button Text="Flex Layout" 
+                Clicked="OnFlexLayout" />
+    </StackLayout>
+</ContentPage>
