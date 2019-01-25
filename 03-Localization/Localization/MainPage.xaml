@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:Localization" 
+             xmlns:i18n="clr-namespace:Localization.Helpers;assembly=Localization" 
+             x:Class="Localization.MainPage">
+    <StackLayout>
+        <Label Text="{i18n:Translate HelloWorld}" 
+               HorizontalOptions="Center" 
+               VerticalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="en" Clicked="OnLanguageChosen" BindingContext="en" />
+            <Button Text="de" Clicked="OnLanguageChosen" BindingContext="de" />
+            <Button Text="es" Clicked="OnLanguageChosen" BindingContext="es" />
+            <Button Text="ru" Clicked="OnLanguageChosen" BindingContext="ru" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
