@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:TableView" 
+             x:Class="TableView.MainPage"
+             Title="Settings">
+    <ContentPage.Content>
+        <TableView Intent="Settings">
+            <TableRoot>
+                <TableSection Title="First Section">
+                    <SwitchCell Text="SwitchCell"
+                                On="false"
+                                OnChanged="SwitchCell_OnChanged" />
+                    
+                    <EntryCell Label="EntryCell" 
+                               Text=""
+                               Placeholder="Enter Text..."
+                               Keyboard="Text"
+                               Completed="EntryCell_OnCompleted"
+                               />
+                    
+                    <TextCell Text="TextCell" 
+                              Detail="Detail" />
+                    
+                    <ImageCell Text="ImageCell" 
+                               Detail="Detail" 
+                               ImageSource="https://cdn.iconscout.com/icon/free/png-256/xamarin-4-599473.png" />
+                </TableSection>
+                <TableSection Title="Second Section">
+                    <ViewCell Tapped="CustomCell_OnTapped">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="CustomCell"
+                                   HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="Center" />
+                            <Label Text="Click Me"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center" />
+                        </StackLayout>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
