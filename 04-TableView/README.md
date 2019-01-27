@@ -2,7 +2,7 @@
 
 An application which explores the TableView UI element in Xamarin.Forms.
 
-![]("Images/1.png")
+![](Images/1.png)
 
 ## Overview
 
