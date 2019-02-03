@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="BasicAnimations.Views.LoadingPage"
+             BackgroundColor="#FDF6EA">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            
+            <Grid ColumnSpacing="5" 
+                  RowSpacing="5" 
+                  x:Name="grid" 
+                  AbsoluteLayout.LayoutBounds="0.5, 0.4, 0.4, 0.2"
+                  AbsoluteLayout.LayoutFlags="All">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <BoxView Color="#E8337E" Grid.Row="0" Grid.Column="0" x:Name="topLeft" />
+                <BoxView Color="#337EE8" Grid.Row="0" Grid.Column="1" x:Name="topRight" />
+                <BoxView Color="#33E87E" Grid.Row="1" Grid.Column="0" x:Name="bottomLeft" />
+                <BoxView Color="#E8E833" Grid.Row="1" Grid.Column="1" x:Name="bottomRight" />
+            </Grid>
+        
+            <Label x:Name="textLabel" 
+                   Text="@defuncart"
+                   TextColor="#2A2628"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   BackgroundColor="Transparent"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.4, 0.05"
+                   AbsoluteLayout.LayoutFlags="All" />
+            
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
