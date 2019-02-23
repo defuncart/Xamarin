@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dfa="clr-namespace:DeFuncArt"
+             x:Class="AutosizeLabel.Views.MainPage">
+    <ContentPage.Content>
+        <Grid Margin="10,10,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+         
+        <dfa:DALabel Grid.Row="0" 
+                     Text="A"
+                     BackgroundColor="Silver"
+                     MinFontSize="10"
+                     MaxFontSize="100"
+                     HorizontalTextAlignment="Center"
+                     VerticalTextAlignment="Center" />
+
+        <dfa:DALabel Grid.Row="1"
+                     Text="This is a long, long, long text string"
+                     BackgroundColor="Teal"
+                     MinFontSize="10"
+                     MaxFontSize="100" />
+        
+        <dfa:DALabel Grid.Row="2"
+                     x:Name="labelC"
+                     Text="C"
+                     BackgroundColor="Gray"
+                     MinFontSize="50"
+                     MaxFontSize="300"
+                     HorizontalTextAlignment="Center"
+                     VerticalTextAlignment="Center" />
+
+    </Grid>
+    </ContentPage.Content>
+</ContentPage>
